@@ -215,8 +215,8 @@
 							"    const responseBody = pm.response.json();\r",
 							"    const deposit = responseBody.depositpaid;\r",
 							"    const total = responseBody.totalprice;\r",
-							"    pm.expect(deposit.to.be.an('boolean'))\r",
-							"    pm.expect(total.to.be.an('number'))\r",
+							"    pm.expect(deposit.to.eql('boolean'))\r",
+							"    pm.expect(total.to.be.eql('number'))\r",
 							"})\r",
 							""
 						],
@@ -289,7 +289,7 @@
 	],
 	"variable": [
 		{
-			"id": "b09bace3-9c5f-4603-81e0-667274e1aa09",
+			"id": "b25713ce-4f09-4da1-b12d-b2416b52c652",
 			"key": "variable_key",
 			"value": ""
 		}
