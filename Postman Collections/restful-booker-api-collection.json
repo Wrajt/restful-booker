@@ -98,6 +98,18 @@
 				"header": []
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "be85a02e-95a1-46c6-b4b2-663fc3749ad6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -149,7 +161,7 @@
 	],
 	"variable": [
 		{
-			"id": "c6c78efc-4062-4f66-a8d7-b87e82c39dd7",
+			"id": "5aa80ec9-ea71-44a4-9c0c-e912443819b9",
 			"key": "variable_key",
 			"value": ""
 		}
