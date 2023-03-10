@@ -154,7 +154,7 @@
 							"\r",
 							"pm.test(\"Body matches string\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
-							"    \"lastname\");\r",
+							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -222,7 +222,7 @@
 	],
 	"variable": [
 		{
-			"id": "762fe6df-e9f3-4896-b7f3-63a7ac1444c6",
+			"id": "f51ade1a-550d-425e-ada5-a12e6ca09aaf",
 			"key": "variable_key",
 			"value": ""
 		}
