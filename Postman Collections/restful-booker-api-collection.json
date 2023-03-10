@@ -52,11 +52,11 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "407f4012-d41f-45db-a903-6f6c3247d9b6",
+				"id": "ea0c2d91-7927-4cd0-91ed-94319d5394ff",
 				"type": "text/javascript",
 				"exec": [
 					"pm.sendRequest({",
-					"    url: \"https://restful-booker.herokuapp.com/booking\",",
+					"    url: \"https://restful-booker.herokuapp.com/auth\",",
 					"    method: 'POST',",
 					"    header: {",
 					"        'Accept': 'application/json',",
@@ -78,7 +78,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "dbff791e-31bf-47a1-b046-0372859e68df",
+				"id": "a734a02b-d2c0-4aa5-ad65-bf223bc84882",
 				"type": "text/javascript",
 				"exec": [
 					""
