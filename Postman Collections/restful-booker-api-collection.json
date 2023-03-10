@@ -41,5 +41,49 @@
 			},
 			"response": []
 		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{BEARERTOKEN}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "407f4012-d41f-45db-a903-6f6c3247d9b6",
+				"type": "text/javascript",
+				"exec": [
+					"pm.sendRequest({",
+					"    url: \"https://restful-booker.herokuapp.com/booking\",",
+					"    method: 'POST',",
+					"    header: {",
+					"        'Accept': 'application/json',",
+					"        'Content-Type': 'application/x-www-form-urlencoded'",
+					"    },",
+					"    body: {",
+					"    \"username\" : \"admin\",",
+					"    \"password\" : \"password123\"",
+					"}",
+					"},",
+					"    (err, res) => {",
+					"        // Set BEARERTOKEN",
+					"        pm.globals.set(\"BEARERTOKEN\", res.json().token)",
+					"        // console.log(res.json());",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "dbff791e-31bf-47a1-b046-0372859e68df",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
 	]
 }
