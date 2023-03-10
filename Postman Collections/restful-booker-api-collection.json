@@ -71,26 +71,9 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2f8706bf-f655-4880-840f-95b8e0be67da",
+				"id": "6e9676a3-3395-4d13-8507-f16f85913cff",
 				"type": "text/javascript",
 				"exec": [
-					"pm.sendRequest({",
-					"    url: \"https://restful-booker.herokuapp.com/auth\",",
-					"    method: 'POST',",
-					"    header: {",
-					"        'Accept': 'application/json',",
-					"        'Content-Type': 'application/x-www-form-urlencoded'",
-					"    },",
-					"    body: {",
-					"    \"username\" : \"admin\",",
-					"    \"password\" : \"password123\"",
-					"}",
-					"}",
-					")",
-					"",
-					"pm.collectionVariables.set(\"BEARERTOKEN\", pm.response.json().token)",
-					"",
-					"",
 					"const tokenUrl = 'https://restful-booker.herokuapp.com/auth';",
 					"",
 					"const clientId = 'admin';",
@@ -100,12 +83,8 @@
 					"  method: 'POST',",
 					"  url: tokenUrl,",
 					"  body: {",
-					"      mode: 'formdata',",
-					"      formdata: [",
-					"          { key: 'grant_type', value: 'client_credentials' },",
-					"          { key: 'client_id', value: clientId },",
-					"          { key: 'client_secret', value: clientSecret }",
-					"      ]",
+					"          'username': clientId,",
+					"          'password': clientSecret",
 					"  }",
 					"};",
 					"",
@@ -121,7 +100,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "d6fb2429-f7e1-4825-bcf9-17a57c404b51",
+				"id": "403e8c42-fe88-4b8b-8b6f-ec69e2c1d74f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -131,7 +110,7 @@
 	],
 	"variable": [
 		{
-			"id": "d687602d-6de9-4410-a6b8-c65190f574b3",
+			"id": "1def67b4-b1f0-44e9-8e77-b4cc2d0cb078",
 			"key": "variable_key",
 			"value": ""
 		}
