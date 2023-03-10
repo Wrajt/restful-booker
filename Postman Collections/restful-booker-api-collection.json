@@ -58,7 +58,10 @@
 						"exec": [
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"})"
+							"})\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"bookingid\");\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -71,6 +74,15 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": "https://restful-booker.herokuapp.com/booking"
 			},
 			"response": []
@@ -125,7 +137,7 @@
 	],
 	"variable": [
 		{
-			"id": "704ab7d8-a714-4b62-ab42-f0cbf9c1e92b",
+			"id": "f8b14c1d-bf84-454b-a4d9-6b04643fccc1",
 			"key": "variable_key",
 			"value": ""
 		}
