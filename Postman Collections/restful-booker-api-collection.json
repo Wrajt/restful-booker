@@ -85,5 +85,12 @@
 				]
 			}
 		}
+	],
+	"variable": [
+		{
+			"id": "b234b7ff-c65b-4483-9086-07092b7b94fe",
+			"key": "variable_key",
+			"value": ""
+		}
 	]
 }
