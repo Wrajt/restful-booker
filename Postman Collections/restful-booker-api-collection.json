@@ -59,7 +59,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ea0c2d91-7927-4cd0-91ed-94319d5394ff",
+				"id": "0b84820a-5b69-4f4f-ab30-4a9b55cccc5d",
 				"type": "text/javascript",
 				"exec": [
 					"pm.sendRequest({",
@@ -73,19 +73,16 @@
 					"    \"username\" : \"admin\",",
 					"    \"password\" : \"password123\"",
 					"}",
-					"},",
-					"    (err, res) => {",
-					"        // Set BEARERTOKEN",
-					"        pm.globals.set(\"BEARERTOKEN\", res.json().token)",
-					"        // console.log(res.json());",
-					"});"
+					"})",
+					"",
+					"pm.collectionVariables.set(\"BEARERTOKEN\", res.json().token)"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "a734a02b-d2c0-4aa5-ad65-bf223bc84882",
+				"id": "7d54b228-1510-467d-b7b8-0b9bf78d165d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -95,7 +92,7 @@
 	],
 	"variable": [
 		{
-			"id": "e5e1ad4b-ecea-46a3-8d49-fd1930859d6a",
+			"id": "6ed3adce-773b-4d29-8c27-bfcbf0298792",
 			"key": "variable_key",
 			"value": ""
 		}
