@@ -173,7 +173,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Book By checkout/checkin date",
+			"name": "New Request",
 			"id": "fcd9358b-e915-4d53-a967-2f0ded9617b6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -234,7 +234,7 @@
 	],
 	"variable": [
 		{
-			"id": "25cc6bc9-7487-4bae-96b6-ab815ad30c9a",
+			"id": "7f21cc51-cfcd-48ff-a221-70f300348a18",
 			"key": "variable_key",
 			"value": ""
 		}
