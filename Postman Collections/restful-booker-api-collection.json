@@ -212,7 +212,7 @@
 							"    pm.expect(total.to.be.a(\"number\"))\r",
 							"})\r",
 							"\r",
-							"pm.test(\"Body matches string\", function () {\r",
+							"pm.test(\"Body matches string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
 							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
 							"});\r",
@@ -290,7 +290,7 @@
 	],
 	"variable": [
 		{
-			"id": "91cc4df5-7fb9-4045-aa8a-df4a08b81d13",
+			"id": "60478588-484f-44c8-849f-8ec9e8903943",
 			"key": "variable_key",
 			"value": ""
 		}
