@@ -152,7 +152,10 @@
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
 							"\r",
-							""
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
+							"    \"lastname\");\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -219,7 +222,7 @@
 	],
 	"variable": [
 		{
-			"id": "b159d8da-e58f-4595-a6ce-2e25e856712d",
+			"id": "762fe6df-e9f3-4896-b7f3-63a7ac1444c6",
 			"key": "variable_key",
 			"value": ""
 		}
