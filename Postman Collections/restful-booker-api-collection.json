@@ -89,13 +89,54 @@
 		},
 		{
 			"name": "Get Book by Name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c2075d9d-4e70-4ae8-9922-88e11ec92b19",
+						"exec": [
+							"pm.test(\"status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include({\"firstname\": \"Sally\",\r",
+							"    \"lastname\": \"Brown\"});\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "becef3d6-9c8c-45ef-8bfa-a439fe26ecaf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking?firstname=john&lastname=smith",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "john"
+						},
+						{
+							"key": "lastname",
+							"value": "smith"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -161,7 +202,7 @@
 	],
 	"variable": [
 		{
-			"id": "d317cbf3-30a8-495a-b837-4e666e5095dd",
+			"id": "20591b96-6a6e-4666-9b47-39bfaa63e60d",
 			"key": "variable_key",
 			"value": ""
 		}
