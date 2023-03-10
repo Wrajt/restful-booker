@@ -88,7 +88,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Get Book by Name",
 			"id": "becef3d6-9c8c-45ef-8bfa-a439fe26ecaf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -149,7 +149,7 @@
 	],
 	"variable": [
 		{
-			"id": "86f070fb-9ef1-4d0e-b413-646f574ec271",
+			"id": "c6c78efc-4062-4f66-a8d7-b87e82c39dd7",
 			"key": "variable_key",
 			"value": ""
 		}
