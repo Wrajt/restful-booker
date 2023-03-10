@@ -141,6 +141,59 @@
 			"response": []
 		},
 		{
+			"name": "Get Book By checkout/checkin date",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e96b1b55-7ebb-4e1b-ae3d-d40417823370",
+						"exec": [
+							"pm.test(\"status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include({\"checkin\": \"2014-03-13\",\r",
+							"    \"checkout\": \"2014-05-21\"});\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "fcd9358b-e915-4d53-a967-2f0ded9617b6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking?checkin=2014-03-13&checkout=2014-05-21",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking"
+					],
+					"query": [
+						{
+							"key": "checkin",
+							"value": "2014-03-13"
+						},
+						{
+							"key": "checkout",
+							"value": "2014-05-21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Book By ID",
 			"event": [
 				{
@@ -169,18 +222,6 @@
 				"method": "GET",
 				"header": [],
 				"url": "https://restful-booker.herokuapp.com/booking/100"
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "fcd9358b-e915-4d53-a967-2f0ded9617b6",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
 			},
 			"response": []
 		}
@@ -234,7 +275,7 @@
 	],
 	"variable": [
 		{
-			"id": "7f21cc51-cfcd-48ff-a221-70f300348a18",
+			"id": "9754ebba-187a-4072-abd6-f2eb45ccbc5e",
 			"key": "variable_key",
 			"value": ""
 		}
