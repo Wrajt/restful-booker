@@ -212,9 +212,9 @@
 							"});\r",
 							"\r",
 							"pm.test(\"expect certain values\", () => {\r",
-							"    const responseBody = pm.response.json();\r",
-							"    const deposit = responseBody.depositpaid;\r",
-							"    const total = responseBody.totalprice;\r",
+							"    let responseBody = pm.response.json();\r",
+							"    let deposit = responseBody.depositpaid;\r",
+							"    let total = responseBody.totalprice;\r",
 							"    pm.expect(deposit.to.eql('boolean'))\r",
 							"    pm.expect(total.to.be.eql('number'))\r",
 							"})\r",
@@ -289,7 +289,7 @@
 	],
 	"variable": [
 		{
-			"id": "b25713ce-4f09-4da1-b12d-b2416b52c652",
+			"id": "f7eb46f3-9183-408b-a6c5-2bc8c62d5cae",
 			"key": "variable_key",
 			"value": ""
 		}
