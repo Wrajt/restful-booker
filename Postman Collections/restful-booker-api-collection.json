@@ -15,7 +15,14 @@
 						"exec": [
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"})"
+							"})\r",
+							"\r",
+							"pm.test(\"get id\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"\r",
+							"pm.collectionVariables.set(\"variable_key\", \"variable_value\");"
 						],
 						"type": "text/javascript"
 					}
@@ -88,7 +95,7 @@
 	],
 	"variable": [
 		{
-			"id": "b234b7ff-c65b-4483-9086-07092b7b94fe",
+			"id": "e5e1ad4b-ecea-46a3-8d49-fd1930859d6a",
 			"key": "variable_key",
 			"value": ""
 		}
