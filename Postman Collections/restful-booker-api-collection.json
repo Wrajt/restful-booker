@@ -171,6 +171,18 @@
 				"url": "https://restful-booker.herokuapp.com/booking/100"
 			},
 			"response": []
+		},
+		{
+			"name": "Get Book By checkout/checkin date",
+			"id": "fcd9358b-e915-4d53-a967-2f0ded9617b6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -222,7 +234,7 @@
 	],
 	"variable": [
 		{
-			"id": "f51ade1a-550d-425e-ada5-a12e6ca09aaf",
+			"id": "25cc6bc9-7487-4bae-96b6-ab815ad30c9a",
 			"key": "variable_key",
 			"value": ""
 		}
