@@ -203,10 +203,11 @@
 						"exec": [
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"})\r",
 							"    const response = response.json();\r",
 							"    const depositpaid = response.depositpaid;\r",
 							"    const totalprice = response.totalprice;\r",
+							"})\r",
+							"    \r",
 							"\r",
 							"pm.test(\"Body matches string\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
@@ -289,7 +290,7 @@
 	],
 	"variable": [
 		{
-			"id": "6f6ee294-8418-4425-9c10-e246d77a34d3",
+			"id": "554e0c4a-1aa7-4b90-963a-f7b84d318536",
 			"key": "variable_key",
 			"value": ""
 		}
