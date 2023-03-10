@@ -210,12 +210,12 @@
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
 							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
 							"});\r",
-							"let responseBody = pm.response.json();\r",
-							"let deposit = responseBody.depositpaid;\r",
-							"    let total = responseBody.totalprice;\r",
+							"\r",
+							"\r",
+							"let thisResponse = pm.response.json();\r",
+							"let deposit = thisResponse.depositpaid;\r",
+							"let total = thisResponse.totalprice;\r",
 							"pm.test(\"expect certain values\", () => {\r",
-							"    \r",
-							"    \r",
 							"    pm.expect(deposit.to.eql('boolean'))\r",
 							"    pm.expect(total.to.be.eql('number'))\r",
 							"})\r",
@@ -290,7 +290,7 @@
 	],
 	"variable": [
 		{
-			"id": "c2a89026-9b38-44f0-a788-84dcf8260f76",
+			"id": "02a4b013-7efa-4ad9-9c5c-b2792eadbf04",
 			"key": "variable_key",
 			"value": ""
 		}
