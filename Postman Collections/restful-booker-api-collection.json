@@ -210,7 +210,7 @@
 							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
 							"});\r",
 							"\r",
-							"pm.test(\"expect boolean value\", () => {\r",
+							"pm.test(\"expect certain values\", () => {\r",
 							"    const response = response.json();\r",
 							"    const depositpaid = response.depositpaid;\r",
 							"    const totalprice = response.totalprice;\r",
@@ -288,7 +288,7 @@
 	],
 	"variable": [
 		{
-			"id": "5b93d3c0-b9d6-4711-ad01-063566b34212",
+			"id": "3bf1f9de-a510-448a-aa23-4345fd6cbe7d",
 			"key": "variable_key",
 			"value": ""
 		}
