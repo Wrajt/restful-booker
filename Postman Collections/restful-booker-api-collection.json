@@ -100,7 +100,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Get Book By ID",
 			"id": "be85a02e-95a1-46c6-b4b2-663fc3749ad6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -161,7 +161,7 @@
 	],
 	"variable": [
 		{
-			"id": "5aa80ec9-ea71-44a4-9c0c-e912443819b9",
+			"id": "d317cbf3-30a8-495a-b837-4e666e5095dd",
 			"key": "variable_key",
 			"value": ""
 		}
