@@ -215,7 +215,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"expect certain values\", () => {\r",
-							"    let thisResponse = pm.response.json();\r",
+							"    const thisResponse = pm.response.json();\r",
 							"    pm.expect(thisResponse.depositpaid.to.be.a(\"boolean\"))\r",
 							"    pm.expect(thisResponse.totalprice.to.be.a(\"number\"))\r",
 							"})\r",
@@ -291,7 +291,7 @@
 	],
 	"variable": [
 		{
-			"id": "95830ac3-290c-4935-baa3-b38df226fb88",
+			"id": "e12ce903-b140-4435-b89c-0c2fefe5734d",
 			"key": "variable_key",
 			"value": ""
 		}
