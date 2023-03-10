@@ -210,6 +210,13 @@
 							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
 							"});\r",
 							"\r",
+							"pm.test(\"expect boolean value\", () => {\r",
+							"    const response = response.json();\r",
+							"    const depositpaid = response.depositpaid;\r",
+							"    const totalprice = response.totalprice;\r",
+							"    pm.expect(depositpaid.to.be.an('boolean'))\r",
+							"    pm.expect(totalprice.to.be.an('number'))\r",
+							"})\r",
 							""
 						],
 						"type": "text/javascript"
@@ -223,6 +230,10 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": "https://restful-booker.herokuapp.com/booking/100"
 			},
 			"response": []
@@ -277,7 +288,7 @@
 	],
 	"variable": [
 		{
-			"id": "1ede5ee0-5704-4d58-b622-65023e955903",
+			"id": "5b93d3c0-b9d6-4711-ad01-063566b34212",
 			"key": "variable_key",
 			"value": ""
 		}
