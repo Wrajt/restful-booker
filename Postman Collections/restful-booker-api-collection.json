@@ -60,7 +60,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
 							"pm.test(\"Body is correct\", function () {\r",
-							"    pm.response.to.have.body(\"bookingid\");\r",
+							"    pm.response.to.contain.body(\"bookingid\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -137,7 +137,7 @@
 	],
 	"variable": [
 		{
-			"id": "f8b14c1d-bf84-454b-a4d9-6b04643fccc1",
+			"id": "ddc74d5b-7b7c-4044-b6ae-3fc7ac58b948",
 			"key": "variable_key",
 			"value": ""
 		}
