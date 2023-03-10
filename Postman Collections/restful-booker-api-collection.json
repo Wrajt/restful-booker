@@ -208,8 +208,8 @@
 							"let deposit = thisResponse.depositpaid;\r",
 							"let total = thisResponse.totalprice;\r",
 							"pm.test(\"expect certain values\", () => {\r",
-							"    pm.expect(deposit.to.eql('boolean'))\r",
-							"    pm.expect(total.to.be.eql('number'))\r",
+							"    pm.expect(deposit.to.be.a('boolean'))\r",
+							"    pm.expect(total.to.be.a('number'))\r",
 							"})\r",
 							"\r",
 							"pm.test(\"Body matches string\", function () {\r",
@@ -290,7 +290,7 @@
 	],
 	"variable": [
 		{
-			"id": "dad8a5a3-0479-41b0-9874-cfa4e668cf14",
+			"id": "dd2d1fe2-306b-4f8e-b863-214da67ca31c",
 			"key": "variable_key",
 			"value": ""
 		}
