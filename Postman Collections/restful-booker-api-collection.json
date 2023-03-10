@@ -50,6 +50,20 @@
 		},
 		{
 			"name": "Get Booking IDS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ff3cbf9f-edac-424c-a827-d44ad29bf934",
+						"exec": [
+							"pm.test(\"status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "f9367e60-88d4-4ed7-b304-5ad82c6f1109",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -111,7 +125,7 @@
 	],
 	"variable": [
 		{
-			"id": "611f31fd-8a79-4200-8436-6d345477b284",
+			"id": "704ab7d8-a714-4b62-ab42-f0cbf9c1e92b",
 			"key": "variable_key",
 			"value": ""
 		}
