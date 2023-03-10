@@ -201,7 +201,7 @@
 					"script": {
 						"id": "3f3329d8-13bb-4482-a4fc-4805a50f9e6f",
 						"exec": [
-							"let thisResponse = pm.response.json();\r",
+							"\r",
 							"\r",
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
@@ -215,6 +215,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"expect certain values\", () => {\r",
+							"    let thisResponse = pm.response.json();\r",
 							"    pm.expect(thisResponse.depositpaid.to.be.a(\"boolean\"))\r",
 							"    pm.expect(thisResponse.totalprice.to.be.a(\"number\"))\r",
 							"})\r",
@@ -290,7 +291,7 @@
 	],
 	"variable": [
 		{
-			"id": "5a34b482-8911-42c8-a9cb-f59b6a45567a",
+			"id": "95830ac3-290c-4935-baa3-b38df226fb88",
 			"key": "variable_key",
 			"value": ""
 		}
