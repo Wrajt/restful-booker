@@ -71,7 +71,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0b84820a-5b69-4f4f-ab30-4a9b55cccc5d",
+				"id": "c6867a77-5123-404d-8f7e-74f426a37c4b",
 				"type": "text/javascript",
 				"exec": [
 					"pm.sendRequest({",
@@ -87,14 +87,14 @@
 					"}",
 					"})",
 					"",
-					"pm.collectionVariables.set(\"BEARERTOKEN\", res.json().token)"
+					"pm.collectionVariables.set(\"BEARERTOKEN\", response.json().token)"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "7d54b228-1510-467d-b7b8-0b9bf78d165d",
+				"id": "4c8898be-04c8-4cb7-b3a4-c63a2562495a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -104,7 +104,7 @@
 	],
 	"variable": [
 		{
-			"id": "aed5bd38-0e7d-4d33-a35e-cce2f3686080",
+			"id": "488222b1-c38d-4f12-aa4a-87b778ec2289",
 			"key": "variable_key",
 			"value": ""
 		}
