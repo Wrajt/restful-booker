@@ -209,17 +209,17 @@
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
 							"\r",
-							"pm.test(\"expect certain values\", () => {\r",
-							"    pm.expect(deposit.to.be.a(\"boolean\"))\r",
-							"    pm.expect(total.to.be.a(\"number\"))\r",
-							"})\r",
+							"\r",
 							"\r",
 							"pm.test(\"Body matches string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
 							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
 							"});\r",
 							"\r",
-							"\r",
+							"pm.test(\"expect certain values\", () => {\r",
+							"    pm.expect(deposit.to.be.a(\"boolean\"))\r",
+							"    pm.expect(total.to.be.a(\"number\"))\r",
+							"})\r",
 							"\r",
 							""
 						],
@@ -292,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "a6758af0-9182-44c0-a8c2-31732d31aefb",
+			"id": "ebb62a25-52fa-46d7-81b9-34b274c952f1",
 			"key": "variable_key",
 			"value": ""
 		}
