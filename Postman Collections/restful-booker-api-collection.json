@@ -56,7 +56,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "https://restful-booker.herokuapp.com/booking"
 			},
 			"response": []
 		}
@@ -110,7 +111,7 @@
 	],
 	"variable": [
 		{
-			"id": "1def67b4-b1f0-44e9-8e77-b4cc2d0cb078",
+			"id": "611f31fd-8a79-4200-8436-6d345477b284",
 			"key": "variable_key",
 			"value": ""
 		}
