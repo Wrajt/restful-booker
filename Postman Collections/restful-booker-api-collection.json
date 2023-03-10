@@ -204,6 +204,9 @@
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
+							"    const response = response.json();\r",
+							"    const depositpaid = response.depositpaid;\r",
+							"    const totalprice = response.totalprice;\r",
 							"\r",
 							"pm.test(\"Body matches string\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
@@ -211,9 +214,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"expect certain values\", () => {\r",
-							"    const response = response.json();\r",
-							"    const depositpaid = response.depositpaid;\r",
-							"    const totalprice = response.totalprice;\r",
+							"    \r",
 							"    pm.expect(depositpaid.to.be.an('boolean'))\r",
 							"    pm.expect(totalprice.to.be.an('number'))\r",
 							"})\r",
@@ -288,7 +289,7 @@
 	],
 	"variable": [
 		{
-			"id": "3bf1f9de-a510-448a-aa23-4345fd6cbe7d",
+			"id": "6f6ee294-8418-4425-9c10-e246d77a34d3",
 			"key": "variable_key",
 			"value": ""
 		}
