@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Logowanie -> get token",
 			"id": "2d4cb741-0ddb-48a6-9f6f-dfcfa024dee3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
