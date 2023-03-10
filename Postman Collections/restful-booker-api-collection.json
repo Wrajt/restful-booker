@@ -203,7 +203,6 @@
 						"exec": [
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"    \r",
 							"})\r",
 							"    \r",
 							"\r",
@@ -213,7 +212,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"expect certain values\", () => {\r",
-							"    const responseBody = response.json();\r",
+							"    const responseBody = pm.response.json();\r",
 							"    const depositpaid = responseBody.depositpaid;\r",
 							"    const totalprice = responseBody.totalprice;\r",
 							"    pm.expect(depositpaid.to.be.an('boolean'))\r",
@@ -290,7 +289,7 @@
 	],
 	"variable": [
 		{
-			"id": "6faf8272-c919-49da-8c84-dd156aebc05d",
+			"id": "d1c0c08f-f67d-4f0b-94d0-e71898b41af6",
 			"key": "variable_key",
 			"value": ""
 		}
