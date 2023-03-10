@@ -7,6 +7,20 @@
 	"item": [
 		{
 			"name": "Logowanie -> get token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1378385a-a2f9-4840-8b4d-6091408aac35",
+						"exec": [
+							"pm.test(\"status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "2d4cb741-0ddb-48a6-9f6f-dfcfa024dee3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
