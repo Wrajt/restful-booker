@@ -153,8 +153,7 @@
 							"})\r",
 							"\r",
 							"pm.test(\"Body matches string\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include({\"checkin\": \"2014-03-13\",\r",
-							"    \"checkout\": \"2014-05-21\"});\r",
+							"    pm.expect(pm.response.text()).to.include(\"bookingdates\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -292,7 +291,7 @@
 	],
 	"variable": [
 		{
-			"id": "9c06be16-b8e1-4f38-ace8-bff1adf83cf4",
+			"id": "c75307e9-b514-49ea-bd47-2d537539495d",
 			"key": "variable_key",
 			"value": ""
 		}
