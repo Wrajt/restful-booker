@@ -19,10 +19,7 @@
 							"\r",
 							"pm.test(\"get id\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"})\r",
-							"\r",
-							"\r",
-							"pm.collectionVariables.set(\"variable_key\", \"variable_value\");"
+							"})"
 						],
 						"type": "text/javascript"
 					}
@@ -312,7 +309,7 @@
 	],
 	"variable": [
 		{
-			"id": "785bcede-7dc4-4e00-a403-22483fb7d05e",
+			"id": "abce98d6-9d1b-416c-9894-84af31739caf",
 			"key": "variable_key",
 			"value": ""
 		}
