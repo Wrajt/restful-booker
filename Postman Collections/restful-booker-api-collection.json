@@ -217,14 +217,14 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Body matches string\", () => {\r",
-							"    const body = pm.response.json();\r",
-							"    pm.expect(body).to.have.keys(\"firstname\", \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"additionalneeds\");\r",
-							"});\r",
-							"\r",
 							"pm.test(\"Expect body to be an object\", () => {\r",
 							"    const body = pm.response.json();\r",
 							"    pm.expect(body).to.be.an(\"object\")\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", () => {\r",
+							"    const body = pm.response.json();\r",
+							"    pm.expect(body).to.have.keys(\"firstname\", \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"additionalneeds\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Test data type of the response\", () => {\r",
@@ -255,7 +255,7 @@
 					"mode": "raw",
 					"raw": ""
 				},
-				"url": "https://restful-booker.herokuapp.com/booking/5"
+				"url": "https://restful-booker.herokuapp.com/booking/2"
 			},
 			"response": []
 		}
@@ -309,7 +309,7 @@
 	],
 	"variable": [
 		{
-			"id": "154775c9-151a-431c-a884-b8bf2bd8f669",
+			"id": "b11d57b5-ce52-4208-b86c-15cb940a2fe8",
 			"key": "variable_key",
 			"value": ""
 		}
