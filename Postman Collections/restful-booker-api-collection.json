@@ -209,9 +209,13 @@
 							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\");\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Test data type of the response\", () => {\r",
+							"pm.test(\"Expect body to be an object\", () => {\r",
 							"    const body = pm.response.json();\r",
 							"    pm.expect(body).to.be.an(\"object\")\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test data type of the response\", () => {\r",
+							"    const body = pm.response.json();\r",
 							"    pm.expect(body.depositpaid).to.be.a(\"boolean\")\r",
 							"    pm.expect(body.totalprice).to.be.a(\"number\")\r",
 							"    pm.expect(body.firstname).to.be.a(\"string\")\r",
@@ -292,7 +296,7 @@
 	],
 	"variable": [
 		{
-			"id": "df9a19b1-0f79-42af-b8c8-403aab76e40a",
+			"id": "be24e0b3-8244-4abb-949f-34ec69770240",
 			"key": "variable_key",
 			"value": ""
 		}
