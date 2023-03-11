@@ -59,7 +59,7 @@
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
-							"pm.test(\"Body matches string\", function () {\r",
+							"pm.test(\"Response includes a list of booking ids\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"bookingid\");\r",
 							"});"
 						],
@@ -292,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "cf30fcb2-f1a1-4177-990b-139e1ac6ed0b",
+			"id": "9c06be16-b8e1-4f38-ace8-bff1adf83cf4",
 			"key": "variable_key",
 			"value": ""
 		}
