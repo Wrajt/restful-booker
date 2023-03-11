@@ -268,8 +268,9 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"url": "https://restful-booker.herokuapp.com/booking"
 			},
 			"response": []
 		}
@@ -323,7 +324,7 @@
 	],
 	"variable": [
 		{
-			"id": "808f27d5-d4cb-4f6a-8e6b-bdd0e680c1f2",
+			"id": "52f11507-1bc1-4cd2-aa53-bfef929f6b8d",
 			"key": "variable_key",
 			"value": ""
 		}
