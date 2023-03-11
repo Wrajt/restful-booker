@@ -262,7 +262,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Create Booking",
 			"id": "b477a6da-4548-45d5-aded-b76c6c3946d0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -323,7 +323,7 @@
 	],
 	"variable": [
 		{
-			"id": "ff9d326e-cc38-49d5-b7c6-0c51c761d3fa",
+			"id": "808f27d5-d4cb-4f6a-8e6b-bdd0e680c1f2",
 			"key": "variable_key",
 			"value": ""
 		}
