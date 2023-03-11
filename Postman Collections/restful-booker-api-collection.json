@@ -218,7 +218,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Body matches string\", () => {\r",
-							"    pm.expect(pm.response.text()).to.have.keys(\"firstname\", \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"additionalneeds\");\r",
+							"    pm.expect(pm.response).to.have.keys(\"firstname\", \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"additionalneeds\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Expect body to be an object\", () => {\r",
@@ -308,7 +308,7 @@
 	],
 	"variable": [
 		{
-			"id": "c118643a-9212-44a2-a6d4-15b2fcfb5b0d",
+			"id": "97b938a0-447f-472b-bd14-dd11d63db3a4",
 			"key": "variable_key",
 			"value": ""
 		}
