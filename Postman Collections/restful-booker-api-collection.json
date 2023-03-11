@@ -211,6 +211,7 @@
 							"\r",
 							"pm.test(\"Test data type of the response\", () => {\r",
 							"    const body = pm.response.json();\r",
+							"    pm.expect(body).to.be.an(\"object\")\r",
 							"    pm.expect(body.depositpaid).to.be.a(\"boolean\")\r",
 							"    pm.expect(body.totalprice).to.be.a(\"number\")\r",
 							"    pm.expect(body.firstname).to.be.a(\"string\")\r",
@@ -291,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "c75307e9-b514-49ea-bd47-2d537539495d",
+			"id": "df9a19b1-0f79-42af-b8c8-403aab76e40a",
 			"key": "variable_key",
 			"value": ""
 		}
