@@ -342,8 +342,18 @@
 	],
 	"variable": [
 		{
-			"id": "cb7a99e0-6242-44fe-b365-4205dd268f7b",
+			"id": "bf5388c1-7f61-478c-b085-45e544539c5c",
 			"key": "variable_key",
+			"value": ""
+		},
+		{
+			"id": "0a022372-931c-45b9-aee6-a4e319446e2c",
+			"key": "myBookingID",
+			"value": ""
+		},
+		{
+			"id": "a0630eee-51d6-47bc-bd9c-45398dd6f1e8",
+			"key": "myBookingRecord",
 			"value": ""
 		}
 	]
