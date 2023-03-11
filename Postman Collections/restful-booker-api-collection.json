@@ -93,7 +93,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c2075d9d-4e70-4ae8-9922-88e11ec92b19",
+						"id": "a7a69515-17bc-4e5a-8ffe-6aea7af3a482",
 						"exec": [
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
@@ -141,7 +141,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Book By checkout/checkin date",
+			"name": "Get Booking By checkout/checkin date",
 			"event": [
 				{
 					"listen": "test",
@@ -292,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "cacdb0c8-314f-42e6-9231-b011062b8c4b",
+			"id": "115e50ea-8798-40b6-a2fd-b9068a07fcb9",
 			"key": "variable_key",
 			"value": ""
 		}
