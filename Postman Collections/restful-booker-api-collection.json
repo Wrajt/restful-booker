@@ -219,7 +219,7 @@
 							"\r",
 							"pm.test(\"Body matches string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
-							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\");\r",
+							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Expect body to be an object\", () => {\r",
@@ -309,7 +309,7 @@
 	],
 	"variable": [
 		{
-			"id": "abce98d6-9d1b-416c-9894-84af31739caf",
+			"id": "626fd355-3c21-44c0-93a6-85af8c52242c",
 			"key": "variable_key",
 			"value": ""
 		}
