@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "07773472-195a-4788-b1a3-d617c19b1922"
+		},
+		{
 			"name": "Logowanie -> get token",
 			"event": [
 				{
@@ -336,7 +341,7 @@
 	],
 	"variable": [
 		{
-			"id": "9721c553-a7ff-4d1c-9a63-d277f9c0a477",
+			"id": "cc5f76bb-b27c-4c6f-b4bf-eb18f23ad475",
 			"key": "variable_key",
 			"value": ""
 		}
