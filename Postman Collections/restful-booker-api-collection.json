@@ -93,7 +93,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "a7a69515-17bc-4e5a-8ffe-6aea7af3a482",
+						"id": "c2075d9d-4e70-4ae8-9922-88e11ec92b19",
 						"exec": [
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
@@ -292,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "115e50ea-8798-40b6-a2fd-b9068a07fcb9",
+			"id": "efeeaa78-d3b0-46df-bf72-c97f2f75f1f0",
 			"key": "variable_key",
 			"value": ""
 		}
