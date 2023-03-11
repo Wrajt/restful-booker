@@ -219,7 +219,7 @@
 							"\r",
 							"pm.test(\"Body matches string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.have.all.keys(\"firstname\",\r",
-							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
+							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"additionalneeds\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Expect body to be an object\", () => {\r",
@@ -255,7 +255,7 @@
 					"mode": "raw",
 					"raw": ""
 				},
-				"url": "https://restful-booker.herokuapp.com/booking/3"
+				"url": "https://restful-booker.herokuapp.com/booking/5"
 			},
 			"response": []
 		}
@@ -309,7 +309,7 @@
 	],
 	"variable": [
 		{
-			"id": "b1ffc19c-4bc6-48c4-b95d-5aca1375d718",
+			"id": "402450c0-3472-4b26-8ed6-1df97c1d3ccd",
 			"key": "variable_key",
 			"value": ""
 		}
