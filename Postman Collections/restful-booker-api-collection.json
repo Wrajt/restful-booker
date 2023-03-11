@@ -203,7 +203,7 @@
 						"exec": [
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
-							"})\r",
+							"});\r",
 							"\r",
 							"pm.test(\"Body matches string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
@@ -216,7 +216,8 @@
 							"    pm.expect(body.totalprice).to.be.a(\"number\")\r",
 							"    pm.expect(body.firstname).to.be.a(\"string\")\r",
 							"    pm.expect(body.lastname).to.be.a(\"string\")\r",
-							"})\r",
+							"});\r",
+							"\r",
 							"pm.test(\"Test bookingdates array to include checkin and checkout\", () => {\r",
 							"    const body = pm.response.json();\r",
 							"    pm.expect(body.bookingdates).to.have.all.keys(\"checkin\", \"checkout\")\r",
@@ -291,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "2299601f-a6e5-4a3d-8bb2-9c8ceb4d5d62",
+			"id": "59aba32d-b75e-48b8-858f-43055ce003cf",
 			"key": "variable_key",
 			"value": ""
 		}
