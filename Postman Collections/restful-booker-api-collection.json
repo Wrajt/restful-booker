@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
+			"name": "Custom Requests",
 			"item": [],
 			"id": "07773472-195a-4788-b1a3-d617c19b1922"
 		},
@@ -341,7 +341,7 @@
 	],
 	"variable": [
 		{
-			"id": "cc5f76bb-b27c-4c6f-b4bf-eb18f23ad475",
+			"id": "74dadc53-21c7-4266-96d2-f27c0fa837ab",
 			"key": "variable_key",
 			"value": ""
 		}
