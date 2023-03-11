@@ -93,7 +93,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c2075d9d-4e70-4ae8-9922-88e11ec92b19",
+						"id": "a7a69515-17bc-4e5a-8ffe-6aea7af3a482",
 						"exec": [
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
@@ -194,7 +194,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Book By ID",
+			"name": "Get Booking By ID",
 			"event": [
 				{
 					"listen": "test",
@@ -292,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "efeeaa78-d3b0-46df-bf72-c97f2f75f1f0",
+			"id": "5334ee25-af30-49ed-a7c8-0e6337a9f303",
 			"key": "variable_key",
 			"value": ""
 		}
