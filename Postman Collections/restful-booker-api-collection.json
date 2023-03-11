@@ -342,17 +342,17 @@
 	],
 	"variable": [
 		{
-			"id": "afd1a3c2-8405-48c8-8cd6-ed00230a9c7a",
+			"id": "3074c653-d728-4643-9f3a-b56dbe8cdc46",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "0594332e-e5e5-4646-b02c-d60218b49b18",
+			"id": "c8633ca5-1991-4020-a0c0-7c39ef72d7cb",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "7d3cad43-474f-485b-a5ed-8e149703f4f8",
+			"id": "ed4f178e-9d8e-4c12-b2ff-3e4105962709",
 			"key": "myBookingRecord",
 			"value": ""
 		}
