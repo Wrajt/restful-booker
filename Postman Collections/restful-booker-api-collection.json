@@ -273,6 +273,18 @@
 				"url": "https://restful-booker.herokuapp.com/booking"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "088dd1a9-6434-4ecf-84a6-0b21c95912b7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -324,7 +336,7 @@
 	],
 	"variable": [
 		{
-			"id": "987373c5-c67f-45ac-a422-89c31129f877",
+			"id": "9721c553-a7ff-4d1c-9a63-d277f9c0a477",
 			"key": "variable_key",
 			"value": ""
 		}
