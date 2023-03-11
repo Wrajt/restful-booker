@@ -233,12 +233,15 @@
 							"    pm.expect(body.totalprice).to.be.a(\"number\")\r",
 							"    pm.expect(body.firstname).to.be.a(\"string\")\r",
 							"    pm.expect(body.lastname).to.be.a(\"string\")\r",
+							"    pm.expect(body.bookingdates.checkin).to.be.a(\"date\")\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Test bookingdates is an object and includes checkin and checkout\", () => {\r",
 							"    const body = pm.response.json();\r",
 							"    pm.expect(body.bookingdates).to.be.an(\"object\").that.has.all.keys(\"checkin\", \"checkout\")\r",
-							"})"
+							"})\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -309,7 +312,7 @@
 	],
 	"variable": [
 		{
-			"id": "b11d57b5-ce52-4208-b86c-15cb940a2fe8",
+			"id": "22fd3cbb-ea49-4051-ab6d-676d6047065d",
 			"key": "variable_key",
 			"value": ""
 		}
