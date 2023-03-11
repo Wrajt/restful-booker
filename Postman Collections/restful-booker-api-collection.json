@@ -59,6 +59,12 @@
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
+							"\r",
+							"pm.test(\"Expect body to be an object\", () => {\r",
+							"    const body = pm.response.json();\r",
+							"    pm.expect(body).to.be.an(\"object\")\r",
+							"});\r",
+							"\r",
 							"pm.test(\"Response includes a list of booking ids\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"bookingid\");\r",
 							"});"
@@ -156,6 +162,11 @@
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
+							"\r",
+							"pm.test(\"Expect body to be an object\", () => {\r",
+							"    const body = pm.response.json();\r",
+							"    pm.expect(body).to.be.an(\"object\")\r",
+							"});\r",
 							"\r",
 							"pm.test(\"Body matches string\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"bookingdates\");\r",
@@ -301,7 +312,7 @@
 	],
 	"variable": [
 		{
-			"id": "33fc49b7-4958-4515-96f6-43e62b1746f3",
+			"id": "28f90692-79d9-41a1-89f8-373a68cadb96",
 			"key": "variable_key",
 			"value": ""
 		}
