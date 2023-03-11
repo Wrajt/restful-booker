@@ -88,7 +88,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Book by Name",
+			"name": "Get Booking by Name",
 			"event": [
 				{
 					"listen": "test",
@@ -292,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "f604090d-f97d-4c08-88b1-315c6c16948d",
+			"id": "86aaad7f-798f-490e-ad9c-e51cdb285492",
 			"key": "variable_key",
 			"value": ""
 		}
