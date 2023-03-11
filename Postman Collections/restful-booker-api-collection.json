@@ -214,13 +214,17 @@
 							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
 							"});\r",
 							"\r",
-							"pm.test(\"expect certain values\", () => {\r",
-							"    const thisResponse = pm.response.json();\r",
-							"    pm.expect(thisResponse.depositpaid).to.be.a(\"boolean\")\r",
-							"    pm.expect(thisResponse.totalprice).to.be.a(\"number\")\r",
+							"pm.test(\"Test data type of the response\", () => {\r",
+							"    const body = pm.response.json();\r",
+							"    pm.expect(body.depositpaid).to.be.a(\"boolean\")\r",
+							"    pm.expect(body.totalprice).to.be.a(\"number\")\r",
+							"    pm.expect(body.firstname).to.be.a(\"string\")\r",
+							"    pm.expect(body.lastname).to.be.a(\"string\")\r",
 							"})\r",
-							"\r",
-							""
+							"pm.test(\"Test bookingdates array to include checkin and checkout\", () => {\r",
+							"    const body = pm.response.json();\r",
+							"    pm.expect(body.bookingdates).to.include(\"checkin\", \"checkout\")\r",
+							"})"
 						],
 						"type": "text/javascript"
 					}
@@ -291,7 +295,7 @@
 	],
 	"variable": [
 		{
-			"id": "4665e1a8-4dab-4eae-b195-cf6ca8c1b215",
+			"id": "5443d7e5-5727-445f-a8d0-e9d994a19a72",
 			"key": "variable_key",
 			"value": ""
 		}
