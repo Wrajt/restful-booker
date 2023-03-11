@@ -233,7 +233,6 @@
 							"    pm.expect(body.totalprice).to.be.a(\"number\")\r",
 							"    pm.expect(body.firstname).to.be.a(\"string\")\r",
 							"    pm.expect(body.lastname).to.be.a(\"string\")\r",
-							"    pm.expect(body.bookingdates.checkin).to.be.a(\"date\")\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Test bookingdates is an object and includes checkin and checkout\", () => {\r",
@@ -312,7 +311,7 @@
 	],
 	"variable": [
 		{
-			"id": "22fd3cbb-ea49-4051-ab6d-676d6047065d",
+			"id": "15d81932-5033-4a2c-9f74-60e538b89daa",
 			"key": "variable_key",
 			"value": ""
 		}
