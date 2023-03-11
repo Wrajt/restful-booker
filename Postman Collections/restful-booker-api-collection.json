@@ -218,7 +218,7 @@
 							"    pm.expect(body.lastname).to.be.a(\"string\")\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Test bookingdates array to include checkin and checkout\", () => {\r",
+							"pm.test(\"Test bookingdates is an object and includes checkin and checkout\", () => {\r",
 							"    const body = pm.response.json();\r",
 							"    pm.expect(body.bookingdates).to.be.an(\"object\").that.has.all.keys(\"checkin\", \"checkout\")\r",
 							"})"
@@ -292,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "50754aff-13d5-4451-b25d-cce2989a7d96",
+			"id": "f604090d-f97d-4c08-88b1-315c6c16948d",
 			"key": "variable_key",
 			"value": ""
 		}
