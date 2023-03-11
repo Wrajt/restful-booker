@@ -134,8 +134,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"url": "https://restful-booker.herokuapp.com/booking/{{myBookingID}}"
 					},
 					"response": []
 				}
@@ -448,17 +449,17 @@
 	],
 	"variable": [
 		{
-			"id": "8538da05-2fa2-4907-b2b8-d88e0d27f4d0",
+			"id": "fcd9d02a-e95a-4060-bb9d-cbcdbc027744",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "d97c8fb5-3aeb-4833-a756-f405e6f9a40d",
+			"id": "196aace2-12e9-4fc7-b18c-28c743710da7",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "1bc9c14d-658d-405a-8f48-6175c09eba38",
+			"id": "ff3b35b5-8560-4b39-8d3f-a7830e564283",
 			"key": "myBookingRecord",
 			"value": ""
 		}
