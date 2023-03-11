@@ -7,7 +7,33 @@
 	"item": [
 		{
 			"name": "Custom Requests",
-			"item": [],
+			"item": [
+				{
+					"name": "Create Booking",
+					"id": "b477a6da-4548-45d5-aded-b76c6c3946d0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "https://restful-booker.herokuapp.com/booking"
+					},
+					"response": []
+				},
+				{
+					"name": "Get created booking",
+					"id": "088dd1a9-6434-4ecf-84a6-0b21c95912b7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "07773472-195a-4788-b1a3-d617c19b1922"
 		},
 		{
@@ -265,31 +291,6 @@
 				"url": "https://restful-booker.herokuapp.com/booking/12991"
 			},
 			"response": []
-		},
-		{
-			"name": "Create Booking",
-			"id": "b477a6da-4548-45d5-aded-b76c6c3946d0",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": "https://restful-booker.herokuapp.com/booking"
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "088dd1a9-6434-4ecf-84a6-0b21c95912b7",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"auth": {
@@ -341,7 +342,7 @@
 	],
 	"variable": [
 		{
-			"id": "74dadc53-21c7-4266-96d2-f27c0fa837ab",
+			"id": "cb7a99e0-6242-44fe-b365-4205dd268f7b",
 			"key": "variable_key",
 			"value": ""
 		}
