@@ -207,7 +207,7 @@
 							"\r",
 							"pm.test(\"Body matches string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
-							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
+							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Test data type of the response\", () => {\r",
@@ -292,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "62bab5d7-f230-4d19-b6cc-c9b1907d0e18",
+			"id": "cf30fcb2-f1a1-4177-990b-139e1ac6ed0b",
 			"key": "variable_key",
 			"value": ""
 		}
