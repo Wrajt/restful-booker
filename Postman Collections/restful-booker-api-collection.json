@@ -99,6 +99,11 @@
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
 							"\r",
+							"pm.test(\"Expect body to be an object\", () => {\r",
+							"    const body = pm.response.json();\r",
+							"    pm.expect(body).to.be.an(\"object\")\r",
+							"});\r",
+							"\r",
 							"pm.test(\"Body matches string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
 							"    \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"checkin\", \"checkout\", \"additionalneeds\");\r",
@@ -151,6 +156,11 @@
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
+							"\r",
+							"pm.test(\"Expect body to be an object\", () => {\r",
+							"    const body = pm.response.json();\r",
+							"    pm.expect(body).to.be.an(\"object\")\r",
+							"});\r",
 							"\r",
 							"pm.test(\"Body matches string\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"bookingdates\");\r",
@@ -296,7 +306,7 @@
 	],
 	"variable": [
 		{
-			"id": "be24e0b3-8244-4abb-949f-34ec69770240",
+			"id": "35fa4a46-8abc-45a0-aa3a-f68eaa59faf7",
 			"key": "variable_key",
 			"value": ""
 		}
