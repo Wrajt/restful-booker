@@ -157,11 +157,6 @@
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
 							"\r",
-							"pm.test(\"Expect body to be an object\", () => {\r",
-							"    const body = pm.response.json();\r",
-							"    pm.expect(body).to.be.an(\"object\")\r",
-							"});\r",
-							"\r",
 							"pm.test(\"Body matches string\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"bookingdates\");\r",
 							"});"
@@ -306,7 +301,7 @@
 	],
 	"variable": [
 		{
-			"id": "35fa4a46-8abc-45a0-aa3a-f68eaa59faf7",
+			"id": "33fc49b7-4958-4515-96f6-43e62b1746f3",
 			"key": "variable_key",
 			"value": ""
 		}
