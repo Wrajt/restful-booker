@@ -201,13 +201,9 @@
 					"script": {
 						"id": "3f3329d8-13bb-4482-a4fc-4805a50f9e6f",
 						"exec": [
-							"\r",
-							"\r",
 							"pm.test(\"status code is 200\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
 							"})\r",
-							"\r",
-							"\r",
 							"\r",
 							"pm.test(\"Body matches string\", () => {\r",
 							"    pm.expect(pm.response.text()).to.include(\"firstname\",\r",
@@ -295,7 +291,7 @@
 	],
 	"variable": [
 		{
-			"id": "01240f4c-100f-4580-badf-6a15a46ab3ea",
+			"id": "2299601f-a6e5-4a3d-8bb2-9c8ceb4d5d62",
 			"key": "variable_key",
 			"value": ""
 		}
