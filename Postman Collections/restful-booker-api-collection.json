@@ -10,6 +10,61 @@
 			"item": [
 				{
 					"name": "Create Booking",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "646ce285-36bc-45e6-b7b7-01938aaa8300",
+								"exec": [
+									"const response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
+									"});\r",
+									"pm.test(\"Accept is present\", function () {\r",
+									"    pm.response.to.have.header(\"Accept\");\r",
+									"    pm.expect(pm.response.headers.get('Accept')).to.eql('application/json');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"status code is 200\", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", () => {\r",
+									"    pm.expect(response).to.have.keys(\"bookingid\", \"booking\");\r",
+									"    pm.expect(response.booking).to.have.keys(\"firstname\", \"lastname\", \"totalprice\", \"depositpaid\", \"bookingdates\", \"additionalneeds\")\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response body is correct\", () => {\r",
+									"    const payload = {\r",
+									"    \"firstname\" : \"James\",\r",
+									"    \"lastname\" : \"McGill\",\r",
+									"    \"totalprice\" : 500,\r",
+									"    \"depositpaid\" : true,\r",
+									"    \"bookingdates\" : {\r",
+									"        \"checkin\" : \"2018-01-01\",\r",
+									"        \"checkout\" : \"2019-01-01\"\r",
+									"    },\r",
+									"    \"additionalneeds\" : \"Dinner\"\r",
+									"}\r",
+									"    pm.expect(response.booking.firstname).to.eq(payload.firstname)\r",
+									"    pm.expect(response.booking.lastname).to.eq(payload.lastname)\r",
+									"    pm.expect(response.booking.totalprice).to.eql(payload.totalprice)\r",
+									"    pm.expect(response.booking.depositpaid).to.eql(payload.depositpaid)\r",
+									"    pm.expect(response.booking.bookingdates.checkin).to.eq(payload.bookingdates.checkin)\r",
+									"    pm.expect(response.booking.bookingdates.checkout).to.eq(payload.bookingdates.checkout)\r",
+									"    pm.expect(response.booking.additionalneeds).to.eq(payload.additionalneeds)\r",
+									"});\r",
+									"\r",
+									"pm.collectionVariables.set(\"myBookingID\", response.bookingid);\r",
+									"pm.collectionVariables.set(\"myBookingRecord\", response.booking);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "b477a6da-4548-45d5-aded-b76c6c3946d0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -17,6 +72,15 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"McGill\",\r\n    \"totalprice\" : 500,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Dinner\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "https://restful-booker.herokuapp.com/booking"
 					},
 					"response": []
@@ -342,17 +406,17 @@
 	],
 	"variable": [
 		{
-			"id": "00a32095-0251-40c0-86ca-6df120c21412",
+			"id": "d91bfbcd-b2f7-4d50-a9ad-68b60ad8466b",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "5f02d34d-7c4d-48c3-a8b7-b986ded09b6a",
+			"id": "ec23022d-e21e-4460-b92d-d3c91b71fc3d",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "1a89751d-77d1-4bef-88b5-07dd116e712a",
+			"id": "6f34ccca-5413-4ab1-b013-b9fe593981f6",
 			"key": "myBookingRecord",
 			"value": ""
 		}
