@@ -87,13 +87,43 @@
 				},
 				{
 					"name": "Get created booking",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fadc21fc-f33f-4a60-9e62-646ea010a312",
+								"exec": [
+									"const thisResponse = pm.response.json();\r",
+									"\r",
+									"pm.test(\"status code is 200\", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"correct contents\", () => {\r",
+									"   const myBookingRecord = pm.variables.get(\"myBookingRecord\")\r",
+									"   pm.expect(myBookingRecord.firstname).to.eq(thisResponse.firstname)\r",
+									"   pm.expect(myBookingRecord.lastname).to.eq(thisResponse.lastname)\r",
+									"   pm.expect(myBookingRecord.totalprice).to.eq(thisResponse.totalprice)\r",
+									"   pm.expect(myBookingRecord.depositpaid).to.eq(thisResponse.depositpaid)\r",
+									"   pm.expect(myBookingRecord.bookingdates.checkin).to.eq(thisResponse.bookingdates.checkin)\r",
+									"   pm.expect(myBookingRecord.bookingdates.checkout).to.eq(thisResponse.bookingdates.checkout)\r",
+									"   pm.expect(myBookingRecord.additionalneeds).to.eq(thisResponse.additionalneeds)\r",
+									"   console.log(myBookingRecord)\r",
+									"   \r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "088dd1a9-6434-4ecf-84a6-0b21c95912b7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://restful-booker.herokuapp.com/booking/{{myBookingID}}"
 					},
 					"response": []
 				}
@@ -406,17 +436,17 @@
 	],
 	"variable": [
 		{
-			"id": "d91bfbcd-b2f7-4d50-a9ad-68b60ad8466b",
+			"id": "c35b7049-66b2-421c-ba90-b2d5b7541ee4",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "ec23022d-e21e-4460-b92d-d3c91b71fc3d",
+			"id": "0c75787f-82aa-40c7-85af-ff4ad4ca6014",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "6f34ccca-5413-4ab1-b013-b9fe593981f6",
+			"id": "8609ca36-89bc-4deb-ad05-2237ee1271e9",
 			"key": "myBookingRecord",
 			"value": ""
 		}
