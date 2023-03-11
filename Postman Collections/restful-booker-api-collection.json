@@ -288,7 +288,7 @@
 					"mode": "raw",
 					"raw": ""
 				},
-				"url": "https://restful-booker.herokuapp.com/booking/12991"
+				"url": "https://restful-booker.herokuapp.com/booking/1"
 			},
 			"response": []
 		}
@@ -342,17 +342,17 @@
 	],
 	"variable": [
 		{
-			"id": "9d8bf66c-22bd-4bf8-907e-ca869e3288f0",
+			"id": "fd52e2df-b290-4ff5-ae37-1b1b47827907",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "fbc7369f-b768-4fb2-a57e-bd3aa5e8b5a1",
+			"id": "271693c2-ae5b-450a-a1d6-b0aa99b2287b",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "501c1c5c-70be-43a5-a48e-c4b0a1e435ee",
+			"id": "6a8078e9-7e44-4f8a-839d-91ab2c6fd68e",
 			"key": "myBookingRecord",
 			"value": ""
 		}
