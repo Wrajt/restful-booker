@@ -128,7 +128,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Update created booking",
 					"id": "2c911be3-5388-4f43-8504-a4d0a054254a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -448,17 +448,17 @@
 	],
 	"variable": [
 		{
-			"id": "202f0190-61ea-4857-8848-b8320383a800",
+			"id": "8538da05-2fa2-4907-b2b8-d88e0d27f4d0",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "2fb16f83-5d87-403e-ae65-144b218e3c26",
+			"id": "d97c8fb5-3aeb-4833-a756-f405e6f9a40d",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "6753d17c-5b2e-4ea0-8907-08168a78c38b",
+			"id": "1bc9c14d-658d-405a-8f48-6175c09eba38",
 			"key": "myBookingRecord",
 			"value": ""
 		}
