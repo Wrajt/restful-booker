@@ -141,7 +141,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Verify updated booking",
 					"id": "846d83ad-25f2-4c79-bae2-0313f70a4224",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -473,22 +473,22 @@
 	],
 	"variable": [
 		{
-			"id": "5d9c422b-ab79-440e-88f1-8bc6d930d8f6",
+			"id": "952fea32-5b46-4d90-abb4-cb8e8cbc63d4",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "5cd13902-127c-444a-9b9b-12ab1565e2d4",
+			"id": "0612596b-dfd3-40d6-8ca5-81a2e19574d9",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "81d74b3c-2682-430e-8324-0228e2cd4c44",
+			"id": "598ff72c-f1a1-41e8-ad22-653ca8ffba8e",
 			"key": "myBookingRecord",
 			"value": ""
 		},
 		{
-			"id": "07d8e464-8b80-42ec-bc89-d72f9fdd877b",
+			"id": "41b9ff7c-64a7-4afa-a5ca-a69fe84d0eb4",
 			"key": "myUpdatedBookingRecord",
 			"value": ""
 		}
