@@ -297,7 +297,48 @@
 					"response": []
 				}
 			],
-			"id": "07773472-195a-4788-b1a3-d617c19b1922"
+			"id": "07773472-195a-4788-b1a3-d617c19b1922",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "255da519-33e3-4e15-80e8-bd7dfbef6987",
+						"type": "text/javascript",
+						"exec": [
+							"const tokenUrl = 'https://restful-booker.herokuapp.com/auth';",
+							"",
+							"const clientId = 'admin';",
+							"const clientSecret = 'password123';",
+							"",
+							"const getTokenRequest = {",
+							"  method: 'POST',",
+							"  url: tokenUrl,",
+							"  body: {",
+							"          'username': clientId,",
+							"          'password': clientSecret",
+							"  }",
+							"};",
+							"",
+							"pm.sendRequest(getTokenRequest, (err, response) => {",
+							"  const jsonResponse = response.json();",
+							"  const newAccessToken = jsonResponse.token;",
+							"",
+							"  pm.variables.set('BEARERTOKEN', newAccessToken);",
+							"});"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "58c6e09e-569c-4ec5-95bf-d468b4ce4493",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Logowanie -> get token",
@@ -605,22 +646,22 @@
 	],
 	"variable": [
 		{
-			"id": "8e9172f2-4c14-4533-b95c-a87c709c909b",
+			"id": "6fdc9db0-7368-4fb5-b52b-39ef9ebe7e30",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "c6d31add-804a-4c0b-a9c5-c79ef6cea261",
+			"id": "3ce4e8e6-d11f-45fa-8d17-05edb5962a5d",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "c64ce03b-9fcf-4431-b845-cb6d17237ab7",
+			"id": "f58e05fe-d097-4878-a99b-cfef65c8a60d",
 			"key": "myBookingRecord",
 			"value": ""
 		},
 		{
-			"id": "e4e46423-fb37-44ab-99b7-cbc68552d00b",
+			"id": "7c15bdac-e4fa-4a64-9ac6-7c597ea234bf",
 			"key": "myUpdatedBookingRecord",
 			"value": ""
 		}
