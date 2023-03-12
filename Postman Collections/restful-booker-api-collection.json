@@ -153,7 +153,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Patch created booking",
 					"id": "cca506d4-9a66-4164-b804-a70dca56040e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -473,22 +473,22 @@
 	],
 	"variable": [
 		{
-			"id": "d05b24c8-5eee-4f52-8ae9-7aa499856f13",
+			"id": "5d9c422b-ab79-440e-88f1-8bc6d930d8f6",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "111b03da-fd11-4bc4-b8c0-0c3d7c0c054d",
+			"id": "5cd13902-127c-444a-9b9b-12ab1565e2d4",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "933f9c6e-2479-42b6-abeb-d6a6930340ba",
+			"id": "81d74b3c-2682-430e-8324-0228e2cd4c44",
 			"key": "myBookingRecord",
 			"value": ""
 		},
 		{
-			"id": "798dae86-3d4a-4ac4-ab7b-e99d04c6d91f",
+			"id": "07d8e464-8b80-42ec-bc89-d72f9fdd877b",
 			"key": "myUpdatedBookingRecord",
 			"value": ""
 		}
