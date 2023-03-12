@@ -151,6 +151,18 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "cca506d4-9a66-4164-b804-a70dca56040e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "07773472-195a-4788-b1a3-d617c19b1922"
@@ -461,22 +473,22 @@
 	],
 	"variable": [
 		{
-			"id": "e9c989fb-1e88-4eee-83d9-a560bdd45e66",
+			"id": "d05b24c8-5eee-4f52-8ae9-7aa499856f13",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "937cb004-25e6-4153-97f6-30ddef2a98e7",
+			"id": "111b03da-fd11-4bc4-b8c0-0c3d7c0c054d",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "c6dc9cc4-b777-42d7-91bc-255758ac7ff8",
+			"id": "933f9c6e-2479-42b6-abeb-d6a6930340ba",
 			"key": "myBookingRecord",
 			"value": ""
 		},
 		{
-			"id": "dc4c8f16-3262-4e9f-99cd-b057292140e5",
+			"id": "798dae86-3d4a-4ac4-ab7b-e99d04c6d91f",
 			"key": "myUpdatedBookingRecord",
 			"value": ""
 		}
