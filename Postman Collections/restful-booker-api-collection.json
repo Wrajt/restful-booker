@@ -473,22 +473,22 @@
 	],
 	"variable": [
 		{
-			"id": "952fea32-5b46-4d90-abb4-cb8e8cbc63d4",
+			"id": "293106a8-83c1-4378-abef-9683bb168043",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "0612596b-dfd3-40d6-8ca5-81a2e19574d9",
+			"id": "82aa3556-fbc2-490e-ae10-57d82ad66233",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "598ff72c-f1a1-41e8-ad22-653ca8ffba8e",
+			"id": "b7b46b48-0f27-42c7-be14-74a00049dbd9",
 			"key": "myBookingRecord",
 			"value": ""
 		},
 		{
-			"id": "41b9ff7c-64a7-4afa-a5ca-a69fe84d0eb4",
+			"id": "7c811358-5f15-4578-8d98-140c936025bd",
 			"key": "myUpdatedBookingRecord",
 			"value": ""
 		}
