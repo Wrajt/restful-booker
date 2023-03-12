@@ -285,7 +285,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Delete created booking",
 					"id": "9ccdf98f-cc23-416a-bd02-ac6f8c8518e7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -605,22 +605,22 @@
 	],
 	"variable": [
 		{
-			"id": "f23659c8-2001-4694-93f6-c33a2d6bf5a1",
+			"id": "c28d85ea-7ad2-4701-ac2d-5f69d74cfe65",
 			"key": "variable_key",
 			"value": ""
 		},
 		{
-			"id": "0b08838b-166c-4ada-82f0-1c4929ca553e",
+			"id": "1616c142-90a5-4e7c-b3ae-b3ccecb21492",
 			"key": "myBookingID",
 			"value": ""
 		},
 		{
-			"id": "ad66e49f-13e5-459a-8ad5-1859bbe46865",
+			"id": "3513b2b2-cef1-476d-bfd6-5c8e1d28f7fd",
 			"key": "myBookingRecord",
 			"value": ""
 		},
 		{
-			"id": "9e6d1c74-af87-49b1-84aa-c51db75e6acf",
+			"id": "203e6247-1a0d-4606-9b43-98c8be83c317",
 			"key": "myUpdatedBookingRecord",
 			"value": ""
 		}
